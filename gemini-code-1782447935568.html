@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opportunity Hub // CJ Mindset</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-matte-black: #080809;
+      --card-bg: #111114;
+      --card-inner: #16161A;
+      --border-dark: #222226;
+      --text-main: #FAFAFA;
+      --text-muted: #7E7E86;
+      --gradient-blue: linear-gradient(135deg, #0052D4 0%, #4364F7 50%, #6FB1FC 100%);
+      --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background-color: var(--bg-matte-black); color: var(--text-main); min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; }
+    .hub-card { width: 100%; max-width: 480px; background: var(--card-bg); border: 1px solid var(--border-dark); border-radius: 20px; overflow: hidden; box-shadow: 0 40px 80px rgba(0, 0, 0, 0.7); }
+    .hub-hero { background: var(--gradient-blue); padding: 40px 24px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+    .hub-hero h3 { font-size: 1.6rem; font-weight: 800; letter-spacing: -1px; color: #FFFFFF; }
+    .hub-hero p { font-size: 0.85rem; color: rgba(255, 255, 255, 0.85); line-height: 1.5; max-width: 340px; }
+    .btn-matrix { display: flex; gap: 10px; margin-top: 8px; }
+    .hero-btn { font-family: 'Roboto Mono', monospace; font-size: 0.7rem; font-weight: 700; padding: 10px 16px; border-radius: 6px; text-decoration: none; text-transform: uppercase; transition: var(--transition-smooth); }
+    .hero-btn.prime { background: #FFFFFF; color: #0052D4; }
+    .hero-btn.ghost { background: rgba(255, 255, 255, 0.1); color: #FFFFFF; border: 1px solid rgba(255, 255, 255, 0.2); }
+    .hub-body { padding: 28px; }
+    .body-title { font-family: 'Roboto Mono', monospace; font-size: 0.75rem; font-weight: 700; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 16px; text-align: center; }
+    .problem-matrix { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .problem-card { background: var(--card-inner); border: 1px solid var(--border-dark); border-radius: 10px; padding: 14px; text-decoration: none; display: block; }
+    .problem-card h5 { font-size: 0.85rem; font-weight: 700; margin-bottom: 4px; color: #E4E4E7; }
+    .problem-card p { font-size: 0.75rem; color: var(--text-muted); line-height: 1.4; }
+    .full-width { grid-column: span 2; }
+    @media (max-width: 440px) { .problem-matrix { grid-template-columns: 1fr; } .full-width { grid-column: span 1; } }
+  </style>
+</head>
+<body>
+
+<div class="hub-card">
+  <div class="hub-hero">
+    <h3>Opportunity Hub</h3>
+    <p>An agile, electronic platform engineered for tracking, vetting, and unlocking modular partnerships.</p>
+    <div class="btn-matrix">
+      <a href="https://www.skool.com/signup?ref=af081293a34f494f8df158691c8919b6" class="hero-btn prime">Join Ecosystem</a>
+      <a href="https://www.facebook.com/profile.php?id=61591147871167" class="hero-btn ghost">Explore Logs</a>
+    </div>
+  </div>
+
+  <div class="hub-body">
+    <div class="body-title">Select Your Path</div>
+    <div class="problem-matrix">
+      <a href="https://www.instagram.com/cashdrop661?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr" class="problem-card">
+        <h5>Newsletter</h5>
+        <p>Real-time insights delivered to your stream.</p>
+      </a>
+      <a href="https://cjmindset.gumroad.com/l/vhikr" class="problem-card">
+        <h5>Systems Guide</h5>
+        <p>Download free email marketing blueprints.</p>
+      </a>
+      <a href="tel:6615416487" class="problem-card full-width">
+        <h5>Book a Strategy Call</h5>
+        <p>Direct bridge to unlock your business infrastructure.</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
